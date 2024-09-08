@@ -1,1 +1,4 @@
-![image](https://github.com/user-attachments/assets/3b2e029e-573c-45ba-aa06-729824d99d24)
+### Diagramm
+
+![image](https://github.com/user-attachments/assets/edbda6cf-83d6-46ac-8fb2-b156a2673e55)
+
