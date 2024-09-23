@@ -29,4 +29,13 @@ DBServer:
 
 ![image](https://github.com/user-attachments/assets/9fa9394d-1b50-4094-9a8b-f762dfbfb2f4)
 
+## Seiten mit WebServer IP:
+### index.html:
 
+![image](https://github.com/user-attachments/assets/1b5d6546-9fec-40f5-b591-932996af6dcc)
+
+### info.php:
+
+![image](https://github.com/user-attachments/assets/ed50a87a-64f3-4ce5-8168-375f076dcf9d)
+
+### db.php:
