@@ -18,3 +18,15 @@ DBServer:
 ## Screenshot der Liste der Elastic IPs mit sprechenden Namen:
 
 ![image](https://github.com/user-attachments/assets/7b413cbc-d700-4a97-bb78-ed3c33644230)
+
+## Screenshot der gestoppten Instanzen:
+
+![image](https://github.com/user-attachments/assets/54d40855-07de-45ad-b8fc-560ee51774b7)
+
+## Screenshot der gestoppten Instanzen mit Subnet:
+
+![image](https://github.com/user-attachments/assets/5e2c6275-37cd-4073-b925-7c5256a4e088)
+
+![image](https://github.com/user-attachments/assets/9fa9394d-1b50-4094-9a8b-f762dfbfb2f4)
+
+
