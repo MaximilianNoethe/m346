@@ -39,3 +39,5 @@ DBServer:
 ![image](https://github.com/user-attachments/assets/ed50a87a-64f3-4ce5-8168-375f076dcf9d)
 
 ### db.php:
+
+![image](https://github.com/user-attachments/assets/583e844a-7921-4b62-b287-3af16cbe58fd)
