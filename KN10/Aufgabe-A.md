@@ -2,7 +2,7 @@
 
 ![image](https://github.com/user-attachments/assets/4cf3deb2-d55a-4c62-ac65-b6741c88d47f)
 
-Web-Server:
+### Web-Server:
 
 Wir haben das “App Service” von Azure verwendet
 
@@ -10,7 +10,7 @@ Premium V3 gewählt, weil es mehr Speicher und RAM zur Verfügung stellt. Dank d
 
 Wir wählten V2 nicht, weil es dort keine Einsparungsmöglichkeiten gab und somit würde es auf hoher Kosten kommen.
 
-DB-Server:
+### DB-Server:
 
 Hier wählten wir Azure SQL-Datenbank
 
