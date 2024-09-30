@@ -1,5 +1,6 @@
 # 1) Rehosting
 
+## Azure
 ![image](https://github.com/user-attachments/assets/4cf3deb2-d55a-4c62-ac65-b6741c88d47f)
 
 ### Web-Server:
