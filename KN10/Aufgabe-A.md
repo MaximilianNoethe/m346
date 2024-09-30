@@ -23,3 +23,16 @@ Diese Auswahl erspart uns eine Menge an Geld und somit haben wir diese Server f�
 
 Warum Traffic Manager und kein Load Balancer:
 Der **Load Balancer** und der **Traffic Manager** in Azure haben unterschiedliche Funktionen und arbeiten auf verschiedenen Ebenen, um den Netzwerkverkehr zu steuern. Aus diesem Grund haben wir den Traffic Manager gewählt, weil wir direkt keinen Load Balancer hinzufügen konnten.
+
+## AWS
+![image](https://github.com/user-attachments/assets/c79e43fc-9e3c-4253-8f7f-7db00ca7d4d0)
+
+Wir haben darauf geachtet, dass alle Anforderungen erfüllt werden und gleichzeitig die monatlichen Kosten möglichst niedrig bleiben.
+
+Für den Webserver haben wir die Instanz g4d.small ausgewählt, da sie exakt den geforderten Spezifikationen entspricht (1 Core, 2 GB RAM).
+
+Den Datenbankserver haben wir mit der Instanz g4d.medium konfiguriert, da diese ebenfalls die Anforderungen erfüllt (2 Cores, 100 GB Speicher, 4 GB RAM).
+
+Die täglichen Backups stellen den kostenintensivsten Teil dar, da jeden Tag 100 GB gesichert werden, was in einer Woche 700 GB und im Monat mindestens 28 Sicherungen ergibt.
+
+Im Gegensatz dazu sind die wöchentlichen und monatlichen Backups deutlich günstiger, da sie seltener durchgeführt werden und somit weniger Speicher benötigt wird.
