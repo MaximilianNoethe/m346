@@ -36,3 +36,19 @@ Den Datenbankserver haben wir mit der Instanz g4d.medium konfiguriert, da diese 
 Die täglichen Backups stellen den kostenintensivsten Teil dar, da jeden Tag 100 GB gesichert werden, was in einer Woche 700 GB und im Monat mindestens 28 Sicherungen ergibt.
 
 Im Gegensatz dazu sind die wöchentlichen und monatlichen Backups deutlich günstiger, da sie seltener durchgeführt werden und somit weniger Speicher benötigt wird.
+
+# 2) Replatforming
+![image](https://github.com/user-attachments/assets/10891f4e-4662-453d-a898-a77107f58a69)
+
+### Web-Server:
+
+Hier haben wir die Performance M ausgewählt auch wenn diese deutlich teurer ist. Dafür haben wir aber genug Speicherplatz wie auch RAM. Lieber geben wir eher mehr Geld aus um unsere Anforderungen zu erreichen anstatt eine schwache Leistung zu haben.
+
+### DB-Server:
+
+Hier haben wir die Standard 2 Version ausgewählt um die nötige Leistung zu erreichen
+
+### Allg. Infos:
+
+Der Load Balancer wie auch die Backups sind automatisch hinzugefügt zu den Versionen, welche wir ausgewählt haben. Die Nachteile dazu sind aber, dass wir z.B. die Backups nicht modifizieren können und somit nicht selber bestimmen wann wir Backups erstellen möchten. Dafür ist es Benutzerfreundliche für Personen, die wenig Ahnung über das Thema haben, weil sie selber nichts konfigurieren müssen und es Heroku für sie es macht.
+
