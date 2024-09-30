@@ -63,9 +63,24 @@ Der Load Balancer wie auch die Backups sind automatisch hinzugefügt zu den Vers
 
 ## Entscheidung zwischen Zoho CRM & Salesforce
 Zoho CRM
-### Erkläung 
+### Erkläung Zoho CRM oder Salesforce
 Zoho CRM zeichnet sich durch eine einfache Bedienung aus, ist aber weniger für sehr komplexe Unternehmensstrukturen geeignet. Hingegen erfordert Salesforce aufgrund seinen verschiedenen Funktionen eine längere Lernzeit. Obwohl Zoho nicht die gleiche Flexibilität wie Salesforce hat, ist es viel günstiger und einfacher zu integrieren. Für mittelgroße Unternehmen, wie es in den gegebenen Anforderungen ersichtlich wurde, ist Zoho eine geeignete Lösung.
 
 ### Erklärung ob IAAS, PAAS oder SAAS
 Ich würde SAAS wählen da es eine günstige, benutzerfreundliche und leicht integrierbare Lösung für mittelgroße Unternehmen bietet. SAAS braucht weniger Wartung und ist schneller einsatzbereit, was den Aufwand für IT-Ressourcen minimiert. Ausserdem ist die Bedienung von SAAS einfacher, wenn man jedoch mehr Erfahrung mit den verschiedenen Service Modellen hat würde ich mich für IAAS entscheiden, weil man dort mehr Einfluss auf die Konfiguration und Anpassung der Infrastruktur hat.
+
+# B) Interpretation der Resultate
+### Wie stark unterscheiden sich die Angebote?
+Die Angebote unterscheiden sich stark voneinander ab. Mit jedem Service Modell, das man betrachtet, kann man weniger Konfigurationen und Anpassungen an der Infrastruktur vornehmen. Das hat Vor- und Nachteile und wirken sich auf den Preis auf. 
+
+Je mehr Konfigurationen schon vorgegeben sind desto teurer wird es -> IAAS konnte man vieles selber entscheiden somit ist es günstiger aber man muss die passenden Arbeitskräfte dafür haben. SAAS -> Ist hingegen viel teurer, dafür ist vieles schon bereitgestellt und man muss die nötigen Arbeitskräfte dafür nicht haben (Mit Ausnahme von Zoho CRM).
+
+### Welches ist das billigste?
+Azure und AWS als IAAS sind die billigsten Optionen.
+
+Zoho CRM ist ein Spezialfall und ziemlich günstig für ein SAAS. Die Erklärung dazu wurde bei "Erkläung Zoho CRM oder Salesforce" erläutert.
+
+### Wieso ist eines davon viel teurer? Ist es aber wirklich teurer?
+Das SAAS ist um einiges teurer, weil die Konfigurationen und Anpassungen an den Infrastrukturen schon vorgenommen wurden. Ob es wirklich teurer ist kommt auf die Arbeitskosten und den Aufwand an. Da SaaS die gesamte Konfiguration bereitstellt, muss ein Unternehmen weniger in IT-Ressourcen investieren, um diese Anpassungen selbst vorzunehmen. Dadurch können langfristig höhere Kosten vermieden werden, die durch die  zusätzlicher Arbeitskräfte entstehen würden.
+
 
