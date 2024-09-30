@@ -34,11 +34,13 @@ Für den Webserver haben wir die Instanz g4d.small ausgewählt, da sie exakt den
 Den Datenbankserver haben wir mit der Instanz g4d.medium konfiguriert, da diese ebenfalls die Anforderungen erfüllt (2 Cores, 100 GB Speicher, 4 GB RAM).
 
 Die täglichen Backups stellen den kostenintensivsten Teil dar, da jeden Tag 100 GB gesichert werden, was in einer Woche 700 GB und im Monat mindestens 28 Sicherungen ergibt.
-
 Im Gegensatz dazu sind die wöchentlichen und monatlichen Backups deutlich günstiger, da sie seltener durchgeführt werden und somit weniger Speicher benötigt wird.
 
 # 2) Replatforming
 ![image](https://github.com/user-attachments/assets/10891f4e-4662-453d-a898-a77107f58a69)
+
+![image](https://github.com/user-attachments/assets/27e4c168-72b9-4f37-926f-2deaf22a8772)
+
 
 ### Web-Server:
 
@@ -51,4 +53,19 @@ Hier haben wir die Standard 2 Version ausgewählt um die nötige Leistung zu err
 ### Allg. Infos:
 
 Der Load Balancer wie auch die Backups sind automatisch hinzugefügt zu den Versionen, welche wir ausgewählt haben. Die Nachteile dazu sind aber, dass wir z.B. die Backups nicht modifizieren können und somit nicht selber bestimmen wann wir Backups erstellen möchten. Dafür ist es Benutzerfreundliche für Personen, die wenig Ahnung über das Thema haben, weil sie selber nichts konfigurieren müssen und es Heroku für sie es macht.
+
+# 3) Repurchasing
+### Zoho CRM
+![image](https://github.com/user-attachments/assets/43a6983e-39bb-482b-bee8-f00fa7fea2f5)
+
+### Salesforce
+![image](https://github.com/user-attachments/assets/38ef5bea-c17e-4476-88c7-3b22c49e0ea4)
+
+## Entscheidung zwischen Zoho CRM & Salesforce
+Zoho CRM
+### Erkläung 
+Zoho CRM zeichnet sich durch eine einfache Bedienung aus, ist aber weniger für sehr komplexe Unternehmensstrukturen geeignet. Hingegen erfordert Salesforce aufgrund seinen verschiedenen Funktionen eine längere Lernzeit. Obwohl Zoho nicht die gleiche Flexibilität wie Salesforce hat, ist es viel günstiger und einfacher zu integrieren. Für mittelgroße Unternehmen, wie es in den gegebenen Anforderungen ersichtlich wurde, ist Zoho eine geeignete Lösung.
+
+### Erklärung ob IAAS, PAAS oder SAAS
+Ich würde SAAS wählen da es eine günstige, benutzerfreundliche und leicht integrierbare Lösung für mittelgroße Unternehmen bietet. SAAS braucht weniger Wartung und ist schneller einsatzbereit, was den Aufwand für IT-Ressourcen minimiert. Ausserdem ist die Bedienung von SAAS einfacher, wenn man jedoch mehr Erfahrung mit den verschiedenen Service Modellen hat würde ich mich für IAAS entscheiden, weil man dort mehr Einfluss auf die Konfiguration und Anpassung der Infrastruktur hat.
 
