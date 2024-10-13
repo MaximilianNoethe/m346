@@ -1,4 +1,4 @@
-#cloud-config
+#cloud-config with my own pubic key
 users: # Definiert eine Liste von Benutzern die beim Start der Instanz erstellt werden sollen
   - name: ubuntu # Benutzername
     sudo: ALL=(ALL) NOPASSWD:ALL # sudo-Regeln für diesen Benutzer -> Volle Rechte ohne Passwortanforderung
