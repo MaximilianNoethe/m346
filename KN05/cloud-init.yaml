@@ -1,4 +1,4 @@
-#cloud-config with my own pubic key
+#cloud-config
 users: # Definiert eine Liste von Benutzern die beim Start der Instanz erstellt werden sollen
   - name: ubuntu # Benutzername
     sudo: ALL=(ALL) NOPASSWD:ALL # sudo-Regeln für diesen Benutzer -> Volle Rechte ohne Passwortanforderung
@@ -6,7 +6,7 @@ users: # Definiert eine Liste von Benutzern die beim Start der Instanz erstellt 
     home: /home/ubuntu # Homeverzeichnis des Benutzers
     shell: /bin/bash # Standard-Shell: /bin/bash
     ssh_authorized_keys: # Beginn der Liste autorisierter SSH-Schlüssel für den Benutzer
-      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDCXqz4+YoUnc5pJ5OgYExANAgm7yv3gJnJzo8otE/DQOAMouxYi6y/9eGNcUj2G23QxVJtm+DEzMEPWOc6cOy+7lmM7OEP7jmX1m9olVHOjxReCDqxEd5u2/A3Tawq7jfgIiakJcFztbAG9E5KoVfy5nU0CZvm4DObsaJ5Fy/ZbH14McdLAVxZK+QtjeSfAAUy121CvzvzwsScfhf8dbgZTHZ2CH3zsn8jx68CbgH7gibnZEy/sJNBzkcbZeUgAEfccHtQkwRnwWfWE6XMhyh6sqcIYU0T2EsXsG49IAqtgKseIu3tlQ1HotBLX9+77tQ6XA4UHy+IltgpYXkj1Icx
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDCXqz4+YoUnc5pJ5OgYExANAgm7yv3gJnJzo8otE/DQOAMouxYi6y/9eGNcUj2G23QxVJtm+DEzMEPWOc6cOy+7lmM7OEP7jmX1m9olVHOjxReCDqxEd5u2/A3Tawq7jfgIiakJcFztbAG9E5KoVfy5nU0CZvm4DObsaJ5Fy/ZbH14McdLAVxZK+QtjeSfAAUy121CvzvzwsScfhf8dbgZTHZ2CH3zsn8jx68CbgH7gibnZEy/sJNBzkcbZeUgAEfccHtQkwRnwWfWE6XMhyh6sqcIYU0T2EsXsG49IAqtgKseIu3tlQ1HotBLX9+77tQ6XA4UHy+IltgpYXkj1Icx aws-key
 ssh_pwauth: false # Deaktiviert Passwortauthentifizierung per SSH -> nur SSH-Schlüssel sind erlaubt
 disable_root: false # Root-Benutzer ist nicht deaktiviert und kann verwendet werden
 package_update: true # Aktualisiert die Paketliste vor der Installation
