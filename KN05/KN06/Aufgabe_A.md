@@ -1,2 +1,0 @@
-### Kurze Erklärung in eigenen Worten was ein Reverse Proxy ist:
-Ein Reverse Proxy ist ein Server der Anfragen von Nutzern entgegennimmt und an andere Server weiterleitet, der die eigentliche Arbeit macht. Er schützt und verwaltet den Zugriff auf die weiteren Server, die hinter diesem Reverse Proxy sind. Er kann ausserdem Anfragen filtern. So wird der Datenverkehr besser organisiert und die Sicherheit wird erhöht.
