@@ -10,46 +10,48 @@ users:
       - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC0WGP1EZykEtv5YGC9nMiPFW3U3DmZNzKFO5nEu6uozEHh4jLZzPNHSrfFTuQ2GnRDSt+XbOtTLdcj26+iPNiFoFha42aCIzYjt6V8Z+SQ9pzF4jPPzxwXfDdkEWylgoNnZ+4MG1lNFqa8aO7F62tX0Yj5khjC0Bs7Mb2cHLx1XZaxJV6qSaulDuBbLYe8QUZXkMc7wmob3PM0kflfolR3LE7LResIHWa4j4FL6r5cQmFlDU2BDPpKMFMGUfRSFiUtaWBNXFOWHQBC2+uKmuMPYP4vJC9sBgqMvPN/X2KyemqdMvdKXnCfrzadHuSSJYEzD64Cve5Zl9yVvY4AqyBD  
 ssh_pwauth: false  
 disable_root: false  
-package_update: true  
+package_update: true
+package_upgrade: true
 packages:
-  - apache2  
-  - adminer  
+  - apache2
   - php
-  - php-mysqli
   - libapache2-mod-php
-
-runcmd:
-  - a2enconf adminer  
-  - systemctl restart apache2  
-
+  - php-mysqli
+  - git
+  - adminer
+ 
 write_files:
-  - path: /var/www/html/db.php  
+  - path: /var/www/html/db.php
+    permissions: "0644"
     content: |
       <?php
-      $servername = "172.31.24.49";  
-      $username = "admin";  
-      $password = "password";  
-      $dbname = "mysql";  
-
+      //database
+      $servername = "172.31.16.174";
+      $username = "admin";
+      $password = "password";
+      $dbname = "mysql";
+      // Create connection
       $conn = new mysqli($servername, $username, $password, $dbname);
-      
+      // Check connection
       if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
+          die("Connection failed: " . $conn->connect_error);
       }
-      echo "Connected successfully";
-
-      $sql = "SELECT Host, User FROM mysql.user;";
+      $sql = "select Host, User from mysql.user;";
       $result = $conn->query($sql);
-
-      while ($row = $result->fetch_assoc()) {
-        echo $row["Host"] . " / " . $row["User"] . "<br />";
+      while($row = $result->fetch_assoc()){
+          echo($row["Host"] . " / " . $row["User"] . "<br />");
       }
       ?>
-
+ 
   - path: /var/www/html/info.php
-    content: |  # PHP-Infoseite
+    permissions: "0644"
+    content: |
       <?php
+      // Show all information, defaults to INFO_ALL
       phpinfo();
       ?>
-
-final_message: "Web server setup completed."
+ 
+runcmd:
+  - sudo a2enmod rewrite
+  - sudo a2enconf adminer
+  - sudo systemctl restart apache2
