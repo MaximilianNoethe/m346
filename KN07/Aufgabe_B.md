@@ -12,3 +12,6 @@
 
 ## Step 5
 ![image](https://github.com/user-attachments/assets/8db97d29-47dd-491e-964c-266977160565)
+
+## Connection zur Applikation
+![image](https://github.com/user-attachments/assets/da1bcfe6-b503-4664-bb10-c5e57d88da8d)
