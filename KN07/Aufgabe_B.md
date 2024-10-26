@@ -27,5 +27,28 @@ Ich musste eine neue Enviroment erstellen, habe für diese Enviroment die Screen
 ## Connection zur Applikation
 ![image](https://github.com/user-attachments/assets/da1bcfe6-b503-4664-bb10-c5e57d88da8d)
 
-# B Teil 2 (CloudFormation)
-### 
+# B Teil 2 (EC2)
+## Instanz und Security Groups
+![image](https://github.com/user-attachments/assets/406419a3-4936-460e-8d34-464053265270)
+
+![image](https://github.com/user-attachments/assets/f0469e43-4a1a-4c6f-a3db-9964509ef1a5)
+
+## Autoscaling
+![image](https://github.com/user-attachments/assets/8c316ba3-2436-4684-917b-66adb25e2ae7)
+
+## Load Balancer
+![image](https://github.com/user-attachments/assets/1934ba91-8a7a-4d4e-a364-4bf3944e66e3)
+
+## Target Group
+![image](https://github.com/user-attachments/assets/336db7ea-b909-429b-a2df-7a10df757a4a)
+
+## CloudFormation
+![image](https://github.com/user-attachments/assets/d53b6e18-5178-4ffa-941a-a431d321fab3)
+
+### Unterschied CloudFormation und Cloud-Init
+CloudFormation ist ein AWS-Dienst, der ganze Infrastrukturen mit vordefinierten Templates erstellt und verwaltet. Cloud-Init ist ein Linux-Tool, das beim Start von Cloud-Instanzen Konfigurationen und Skripte ausführt. Der Hauptunterschied: CloudFormation managt komplette Infrastrukturen, während Cloud-Init nur einzelne Server konfiguriert.
+
+
+
+
+
