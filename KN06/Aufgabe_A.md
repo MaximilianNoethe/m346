@@ -20,3 +20,5 @@ Ein Reverse Proxy ist ein Server der Anfragen von Nutzern entgegennimmt und an a
   ```ssh_pwauth: true```
 
 - Unnötige Verwendung von sudo in runcmd.
+
+- Credentials sind öffentlich freigegeben
